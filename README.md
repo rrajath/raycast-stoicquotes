@@ -1,2 +1,3 @@
-# raycast-stoicquotes
-A raycast extension to display a random stoic quote inside the raycast window
+# StoicQuotes
+
+Gives a random quote from one of the stoic philosophers - Marcus Aurelius, Seneca or Epictetus
