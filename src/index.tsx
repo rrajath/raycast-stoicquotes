@@ -16,11 +16,12 @@ export default function Command() {
     }
   });
 
-  const stoicQuote = !isLoading && data ? data : "Loading...";
+  const stoicQuote = !isLoading && data ? `> ${data.body}\n\n${data.author}`: "Loading...";
+  
   return (
     <Detail
       isLoading={isLoading}
-      markdown={`# ${data?.body}\n~ ${data?.author}`}
+      markdown={ stoicQuote }
       actions={
         <ActionPanel>
           <Action title="New Quote" onAction={revalidate} />
